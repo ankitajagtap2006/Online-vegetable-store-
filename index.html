@@ -70,7 +70,138 @@ header {
   .card img {
     height: 130px;
   }
+}<style>
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5faf3;
+  color: #243526;
+}
+
+header {
+  background: linear-gradient(135deg, #14532d, #22a447);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.search {
+  text-align: center;
+  padding: 25px 12px;
+}
+
+.search input {
+  width: 90%;
+  max-width: 550px;
+  padding: 15px 20px;
+  border: 1px solid #c9dfc5;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(35, 90, 40, 0.10);
+  border: 1px solid #e4eee0;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  max-width: 230px;
+  height: 170px;
+  object-fit: contain;
+  display: block;
+  margin: 10px auto;
+}
+
+.card h2 {
+  color: #216e39;
+  font-size: 22px;
+}
+
+.card p {
+  font-size: 17px;
+}
+
+button {
+  background: #218739;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #14532d;
+}
+
+footer {
+  background: #14532d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 25px;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card img {
+    height: 120px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+}
+</style>
   <style>
     body {
       font-family: Arial, sans-serif;
