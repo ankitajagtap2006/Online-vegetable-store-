@@ -4,7 +4,73 @@
   <base href=/
     online vegetable-store-/">un
   <title>Online Vegetable Store</title>
+/* Improved Website Design */
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f0fff0;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #15803d, #4caf50);
+  color: white;
+  padding: 30px 15px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.search input {
+  padding: 15px;
+  width: 85%;
+  max-width: 500px;
+  font-size: 18px;
+  border: 2px solid #4caf50;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px #00000018;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #e0f0e0;
+}
+
+.card img {
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+  object-fit: contain;
+  display: block;
+  margin: 10px auto;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .card img {
+    height: 130px;
+  }
+}
   <style>
     body {
       font-family: Arial, sans-serif;
